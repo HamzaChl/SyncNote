@@ -1,0 +1,43 @@
+@import url("https://use.typekit.net/wpm7oqe.css");
+
+* {
+  --background: #F7F6F6;
+  --background-aside: #E2E2E1;
+  --article: #FFFFFF;
+  font-family: elza, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+html {
+  height: 100%;
+  background-color: rgb(51, 50, 51);
+  background: linear-gradient(0deg, rgba(51, 50, 51, 1) 0%, rgba(60, 57, 60, 1) 100%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  min-height: 100vh;
+  background: rgb(60, 57, 60);
+  background: linear-gradient(180deg, rgba(60, 57, 60, 1) 0%, rgba(25, 25, 25, 1) 100%);
+  color: white;
+}
+
+h1 {
+  font-family: stevie-sans, sans-serif;
+  font-weight: bold;
+  font-size: 3.1rem;
+  background: rgb(0, 146, 69);
+  background: linear-gradient(0deg, rgba(0, 146, 69, 1) 0%, rgba(90, 177, 64, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: stevie-sans, sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 2rem;
+}
