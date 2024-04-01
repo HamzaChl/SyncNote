@@ -1,6 +1,7 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
 import path from "path";
+import Lenis from "@studio-freight/lenis";
 
 dotenv.config();
 
@@ -13,11 +14,34 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT || 3000);
+const pages = ["home", "pricing", "login", "settings", "logout"];
 
 app.get("/", (req, res) => {
-  res.render("index", {
+  res.render("landing", {
     title: "Welcome to SyncNote !",
-    message: "Hello World",
+  });
+});
+
+app.get("/pricing", (req, res) => {
+  res.render("pricing", {
+    title: "Welcome to SyncNote !",
+  });
+});
+app.get("/login", (req, res) => {
+  res.render("login", {
+    title: "Login to SyncNote !",
+  });
+});
+
+app.get("/about", (req, res) => {
+  res.render("about", {
+    title: "About SyncNote !",
+  });
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact", {
+    title: "Contact SyncNote !",
   });
 });
 
